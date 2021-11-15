@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{ 
+            width:682px; height:310px; 
+            background-color:#555; font-size:85%;
+            }
+
+            .cell { 
+            width:30px; height:30px;
+            background-color:#333; color:#ccc;
+            float:left; margin-right:1px;
+            margin-bottom:1px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table id="table">
+            <script>
+		const objects = { one:'1', two:'2', three:'3' }
+		var rows = '';
+	    	for( var key in objects )
+	    	{
+	    	    rows += '<tr id = "row' + key + '"> <td rowspan="2">1</td> <td>2</td></tr><tr><td>3</td> </tr>';
+
+    		}
+		document.getElementById( 'table' ).innerHTML = rows;
+            </script>
+        </table>
+    </body>
+</html>

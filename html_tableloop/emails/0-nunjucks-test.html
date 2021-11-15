@@ -3,7 +3,12 @@
         <title>Test</title>
         <script src="nunjucks.js"></script>
     </head>
-    <body>  
-        {{ var1 }}
+    <body>
+        {% for item in list1 %}  
+            {{ item.var1 }}
+            <br>
+            {{ item.var2 }}
+            <br><br>
+        {% endfor %}
     </body>
 </html>
