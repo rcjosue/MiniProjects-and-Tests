@@ -4,11 +4,35 @@
         <script src="nunjucks.js"></script>
     </head>
     <body>
-        {% for item in list1 %}  
-            {{ item.var1 }}
-            <br>
-            {{ item.var2 }}
-            <br><br>
-        {% endfor %}
+        <table>
+            <tr>
+                <td>
+                    {{ usernameReceiver }}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{ coachEmail }}
+                    <br>
+                    <br>        
+                </td>
+            </tr>
+            {% for kadet in kadetList %}  
+            <tr>
+                <td>
+                    {{ kadet.usernameSender}}
+                    <br>
+                    {{ kadet.messageSender}}
+                    <br><br>
+                </td>
+                <td>
+                    <a href = {{kadet.approvalLink}} >accept</a>
+                    <br>
+                    <a href = {{kadet.declineLink}} >not now</a>
+                    <br><br>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
     </body>
 </html>
