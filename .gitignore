@@ -3,6 +3,8 @@
 # dependencies
 html_tableloop/node_modules
 node_api_test/node_modules
+dockerized_node/node_modules
+Zuitt_bootcamp/node_modules
 /node_modules
 /.pnp
 .pnp.js

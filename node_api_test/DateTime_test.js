@@ -90,9 +90,14 @@ const getNudgeDate = () => {
 //console.log(getNudgeDate());
 
 const newnow = new Date();
-let startTime = new Date(newnow);
-let endTime = new Date(newnow);
-startTime.setHours(newnow.getHours() - 1);
-endTime.setHours(newnow.getHours() + 1);
+let startTime = new Date();
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+let endTime = new Date();
+//startTime.setHours(newnow.getHours() - 1);
+//endTime.setHours(newnow.getHours() + 1);
+console.log(endTime, startTime);
+console.log(endTime > startTime);
 
-console.log(newnow, "\n", startTime, "\n", endTime);
+//console.log(newnow, "\n", startTime, "\n", endTime);
